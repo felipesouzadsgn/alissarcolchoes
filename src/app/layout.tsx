@@ -21,7 +21,7 @@ export default function RootLayout({
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-5FBV3H62PF`}
+          src={`https://www.googletagmanager.com/gtag/js?id=UA-156412376-1`}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -29,7 +29,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-5FBV3H62PF', {
+            gtag('config', 'UA-156412376-1', {
               page_path: window.location.pathname,
             });
           `,
