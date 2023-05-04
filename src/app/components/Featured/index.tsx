@@ -15,7 +15,7 @@ export function Featured() {
             <Image src={WhatsAppBlue} className="w-16 h-16" alt="" />
           </Link>
         </div>
-        <div className="flex-1 grid grid-cols-2 gap-6">
+        <div className="flex-1 grid grid-cols-2 max-md:grid-cols-1 gap-6">
           <div className="relative flex-1 border bg-white rounded-lg">
             <Image src={IMG01} alt="" className="" />
             <Link href="https://wa.me/5513981577284" target="_blank" className="absolute flex justify-center items-center rounded-tl-2xl right-0 bottom-0 w-16 h-16 bg-blue-700">
