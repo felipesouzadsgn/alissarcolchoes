@@ -15,6 +15,7 @@ import IMG2 from "../../assets/img/img-2.png"
 import IMG3 from "../../assets/img/img-3.png"
 
 import { useState } from "react"
+import Link from "next/link"
 
 
 export function Hero() {
@@ -65,9 +66,9 @@ export function Hero() {
   return (
     <section className="relative navigation-wrapper">
       <ul className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 max-md:gap-3 z-10">
-        <li><Image src={InstagramLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></li>
-        <li><Image src={FacebookLogo} alt="Icone do Facebook" className="w-8 h-8 max-md:w-6 max-md:h-5" /></li>
-        <li><Image src={WhatsAppLogo} alt="Icone do WhatsApp" className="w-8 h-8 max-md:w-6 max-md:h-5" /></li>
+        <li><Link href="https://intagram.com/alissarcolchoes" target="_blank"><Image src={InstagramLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
+        <li><Link href="https://facebook.com/alissarcolchoes" target="_blank"><Image src={FacebookLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
+        <li><Link href="https://wa.me/5513981577284" target="_blank"><Image src={WhatsAppLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
       </ul>
       <div ref={sliderRef} className="keen-slider">
         <div className="keen-slider__slide number-slide1 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
@@ -76,25 +77,25 @@ export function Hero() {
             <span className="uppercase text-white">Category</span>
             <h2 className="text-7xl mt-2 max-md:text-5xl bold max-tablet:text-center text-yellow-400">Baú Casal</h2>
             <p className="text-white max-md:text-sm my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus a at suscipit nemo eveniet fugiat itaque possimus tempora.</p>
-            <a href="" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</a>
+            <Link href="https://wa.me/5513981577284" target="_blank" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</Link>
           </div>
         </div>
-        <div className="keen-slider__slide number-slide1 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
+        <div className="keen-slider__slide number-slide2 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
           <Image src={IMG2} alt="Image de Colchão & Box" className="w-[624px] 6-[524px]" />
           <div className="max-w-md max-tablet:text-center">
             <span className="uppercase text-white">Category</span>
             <h2 className="text-7xl mt-2 max-md:text-5xl bold max-tablet:text-center text-yellow-400">Baú Casal</h2>
             <p className="text-white max-md:text-sm my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus a at suscipit nemo eveniet fugiat itaque possimus tempora.</p>
-            <a href="" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</a>
+            <Link href="https://wa.me/5513981577284" target="_blank" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</Link>
           </div>
         </div>
-        <div className="keen-slider__slide number-slide1 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
+        <div className="keen-slider__slide number-slide3 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
           <Image src={IMG3} alt="Image de Colchão & Box" className="w-[624px] 6-[524px]" />
           <div className="max-w-md max-tablet:text-center">
             <span className="uppercase text-white">Category</span>
             <h2 className="text-7xl mt-2 max-md:text-5xl bold max-tablet:text-center text-yellow-400">Baú Casal</h2>
             <p className="text-white max-md:text-sm my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus a at suscipit nemo eveniet fugiat itaque possimus tempora.</p>
-            <a href="" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</a>
+            <Link href="https://wa.me/5513981577284" target="_blank" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</Link>
           </div>
         </div>
       </div>
@@ -102,7 +103,7 @@ export function Hero() {
         {loaded && instanceRef.current && (
           <div className="flex flex-col py-3 gap-3">
             {[
-              1, 2, 3,
+              0, 1, 2,
             ].map((idx) => {
               return (
                 <li
