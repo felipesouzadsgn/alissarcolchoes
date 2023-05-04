@@ -66,7 +66,7 @@ export function Hero() {
   return (
     <section className="relative navigation-wrapper">
       <ul className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 max-md:gap-3 z-10">
-        <li><Link href="https://intagram.com/alissarcolchoes" target="_blank"><Image src={InstagramLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
+        <li><Link href="https://instagram.com/alissarcolchoes" target="_blank"><Image src={InstagramLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
         <li><Link href="https://facebook.com/alissarcolchoes" target="_blank"><Image src={FacebookLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
         <li><Link href="https://wa.me/5513981577284" target="_blank"><Image src={WhatsAppLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
       </ul>
