@@ -7,13 +7,13 @@ import "./styles.css"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
-
 import WhatsAppLogo from "../../assets/svg/WhatsappLogo.svg"
 import InstagramLogo from "../../assets/svg/InstagramLogo.svg"
 import FacebookLogo from "../../assets/svg/FacebookLogo.svg"
 import IMG1 from "../../assets/img/img-1.png"
 import IMG2 from "../../assets/img/img-2.png"
 import IMG3 from "../../assets/img/img-3.png"
+
 import { useState } from "react"
 
 
@@ -62,11 +62,9 @@ export function Hero() {
     ]
   )
 
-  const arr = []
-
   return (
     <section className="relative navigation-wrapper">
-      <ul className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-10">
+      <ul className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 max-md:gap-3 z-10">
         <li><Image src={InstagramLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></li>
         <li><Image src={FacebookLogo} alt="Icone do Facebook" className="w-8 h-8 max-md:w-6 max-md:h-5" /></li>
         <li><Image src={WhatsAppLogo} alt="Icone do WhatsApp" className="w-8 h-8 max-md:w-6 max-md:h-5" /></li>
