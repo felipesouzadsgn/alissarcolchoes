@@ -11,8 +11,8 @@ export function Featured() {
       <div className="w-full flex max-w-7xl mt-56 gap-8 max-tablet:flex-col">
         <div className="relative flex-1 h-[560px] bg-blue-700 rounded-lg">
           <Image src={P01} alt="" className="-mt-40" />
-          <Link href="https://wa.me/5513981577284" target="_blank" className="absolute flex justify-center items-center rounded-tl-2xl right-0 bottom-0 w-16 h-16 bg-blue-700">
-            <Image src={WhatsApp} className="w-12 h-12" alt="" />
+          <Link href="https://wa.me/5513981577284" target="_blank" className="absolute flex justify-center items-center rounded-tl-2xl right-0 bottom-0 w-24 h-24 bg-white">
+            <Image src={WhatsAppBlue} className="w-16 h-16" alt="" />
           </Link>
         </div>
         <div className="flex-1 grid grid-cols-2 gap-6">
