@@ -104,7 +104,7 @@ export function Hero() {
         {loaded && instanceRef.current && (
           <div className="flex flex-col py-3 gap-3">
             {[
-              ...Array(instanceRef.current.track.details.slides.length).keys(),
+              1, 2, 3,
             ].map((idx) => {
               return (
                 <li
