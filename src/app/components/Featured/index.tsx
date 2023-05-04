@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function Featured() {
   return (
-    <section className="w-full h-auto  flex justify-center">
+    <section className="w-full h-auto  flex justify-center px-3">
       <div className="w-full flex max-w-7xl mt-56 gap-8 max-tablet:flex-col">
         <div className="relative flex-1 h-[560px] bg-blue-700 rounded-lg">
           <Image src={P01} alt="" className="-mt-40" />
