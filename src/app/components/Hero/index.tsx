@@ -62,6 +62,7 @@ export function Hero() {
     ]
   )
 
+  const arr = []
 
   return (
     <section className="relative navigation-wrapper">
@@ -103,8 +104,8 @@ export function Hero() {
         {loaded && instanceRef.current && (
           <div className="flex flex-col py-3 gap-3">
             {[
-              Array(instanceRef.current.track.details.slides.length).keys(),
-            ].map((idx: any) => {
+              ...Array(instanceRef.current.track.details.slides.length).keys(),
+            ].map((idx) => {
               return (
                 <li
                   key={idx}
