@@ -72,7 +72,7 @@ export function Hero() {
       </ul>
       <div ref={sliderRef} className="keen-slider">
         <div className="keen-slider__slide number-slide1 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
-          <Image src={IMG1} alt="Image de Colchão & Box" className="w-[624px] 6-[524px]" />
+          <Image src={IMG1} alt="Image de Colchão & Box" className="w-[624px]" />
           <div className="max-w-md max-tablet:text-center">
             <span className="uppercase text-white">Category</span>
             <h2 className="text-7xl mt-2 max-md:text-5xl bold max-tablet:text-center text-yellow-400">Baú Casal</h2>
@@ -81,7 +81,7 @@ export function Hero() {
           </div>
         </div>
         <div className="keen-slider__slide number-slide2 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
-          <Image src={IMG2} alt="Image de Colchão & Box" className="w-[624px] 6-[524px]" />
+          <Image src={IMG2} alt="Image de Colchão & Box" className="w-[624px]" />
           <div className="max-w-md max-tablet:text-center">
             <span className="uppercase text-white">Category</span>
             <h2 className="text-7xl mt-2 max-md:text-5xl bold max-tablet:text-center text-yellow-400">Baú Casal</h2>
@@ -90,7 +90,7 @@ export function Hero() {
           </div>
         </div>
         <div className="keen-slider__slide number-slide3 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
-          <Image src={IMG3} alt="Image de Colchão & Box" className="w-[624px] 6-[524px]" />
+          <Image src={IMG3} alt="Image de Colchão & Box" className="w-[624px]" />
           <div className="max-w-md max-tablet:text-center">
             <span className="uppercase text-white">Category</span>
             <h2 className="text-7xl mt-2 max-md:text-5xl bold max-tablet:text-center text-yellow-400">Baú Casal</h2>
