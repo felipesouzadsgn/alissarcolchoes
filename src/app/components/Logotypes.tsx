@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import logoEcoflex from "../assets/svg/logo-ecoflex.svg"
+import logoOrtobom from "../assets/svg/logo-ortobom.svg"
+import logoSankonfot from "../assets/svg/logo-sankonfort.svg"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
@@ -40,16 +42,16 @@ export function Logotypes() {
         <Image src={logoEcoflex} alt="" />
       </div>
       <div className="keen-slider__slide number-slide2 px-6 p-2 border">
-        <Image src={logoEcoflex} alt="" />
+        <Image src={logoSankonfot} alt="" />
       </div>
       <div className="keen-slider__slide number-slide3 px-6 p-2 border">
-        <Image src={logoEcoflex} alt="" />
+        <Image src={logoOrtobom} alt="" />
       </div>
       <div className="keen-slider__slide number-slide4 px-6 p-2 border">
         <Image src={logoEcoflex} alt="" />
       </div>
       <div className="keen-slider__slide number-slide5 px-6 p-2 border">
-        <Image src={logoEcoflex} alt="" />
+        <Image src={logoSankonfot} alt="" />
       </div>
 
     </section>
