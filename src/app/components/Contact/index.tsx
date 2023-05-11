@@ -1,6 +1,6 @@
 "use client"
 
-import { Envelope, FacebookLogo, InstagramLogo, Phone, WhatsappLogo } from "@phosphor-icons/react";
+import { FacebookLogo, InstagramLogo, Phone, WhatsappLogo } from "@phosphor-icons/react";
 import Link from "next/link";
 
 export function Contact() {
