@@ -11,6 +11,7 @@ import P05 from "./assets/img/img-3.png"
 import P06 from "./assets/img/img-3.png"
 import { Banner } from './components/Banner'
 import { Feedbacks } from './components/Feedbacks'
+import { Contact } from './components/Contact'
 
 export default function Home() {
   const imagesUrls = [P01, P02, P03, P04, P05, P06]
@@ -20,8 +21,8 @@ export default function Home() {
       <Featured />
       <Logotypes />
       <Products images={imagesUrls} />
-      <Banner />
       <Feedbacks />
+      <Contact />
     </main>
   )
 }
