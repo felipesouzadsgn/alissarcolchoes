@@ -17,6 +17,21 @@ import IMG3 from "../../assets/img/Img001.png"
 import { useState } from "react"
 import Link from "next/link"
 
+export const gtagReportConversion = (url: any) => {
+  const callback = () => {
+    if (typeof url !== 'undefined') {
+      window.location = url;
+    }
+  };
+
+  window.gtag('event', 'conversion', {
+    send_to: 'AW-773499482/gU1vCInImKEYENrU6vAC',
+    event_callback: callback,
+  });
+
+  return false;
+};
+
 
 export function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -68,7 +83,7 @@ export function Hero() {
       <ul className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 max-md:gap-3 z-10">
         <li><Link href="https://instagram.com/alissarcolchoes" target="_blank"><Image src={InstagramLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
         <li><Link href="https://facebook.com/alissarcolchoes" target="_blank"><Image src={FacebookLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
-        <li><Link href="https://wa.me/5513981577284" target="_blank"><Image src={WhatsAppLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
+        <li><Link onClick={gtagReportConversion} href="https://wa.me/5513981577284" target="_blank"><Image src={WhatsAppLogo} alt="Icone do Instagram" className="w-8 h-8 max-md:w-6 max-md:h-5" /></Link></li>
       </ul>
       <div ref={sliderRef} className="keen-slider">
         <div className="keen-slider__slide number-slide1 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">

@@ -11,7 +11,6 @@ import P05 from "./assets/img/img-3.png"
 import P06 from "./assets/img/img-3.png"
 import { Feedbacks } from './components/Feedbacks'
 import { Contact } from './components/Contact'
-import Head from 'next/head'
 
 export default function Home() {
   const imagesUrls = [P01, P02, P03, P04, P05, P06]
