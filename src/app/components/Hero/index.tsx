@@ -24,7 +24,7 @@ export const gtagReportConversion = (url: any) => {
     }
   };
 
-  window.gtag('event', 'conversion', {
+  globalThis.gtag('event', 'conversion', {
     send_to: 'AW-773499482/gU1vCInImKEYENrU6vAC',
     event_callback: callback,
   });
