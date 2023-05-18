@@ -12,7 +12,7 @@ import InstagramLogo from "../../assets/svg/InstagramLogo.svg"
 import FacebookLogo from "../../assets/svg/FacebookLogo.svg"
 import IMG1 from "../../assets/img/img-1.png"
 import IMG2 from "../../assets/img/img-2.png"
-import IMG3 from "../../assets/img/img-3.png"
+import IMG3 from "../../assets/img/Img001.png"
 
 import { useState } from "react"
 import Link from "next/link"
