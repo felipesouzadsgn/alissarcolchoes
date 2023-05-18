@@ -32,7 +32,7 @@ export default function RootLayout({
         `}
         </Script>
 
-        <Script strategy="afterInteractive">
+        <Script id='gtag-manager' strategy="afterInteractive">
           {`
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -42,9 +42,11 @@ export default function RootLayout({
         `}
         </Script>
         <Header />
-        {children}</body>
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P57J3BJ"
-        className='hidden invisible w-0 h-0'></iframe></noscript>
+        {children}
+
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P57J3BJ"
+          className='hidden invisible w-0 h-0'></iframe></noscript>
+      </body>
     </html>
   )
 }
