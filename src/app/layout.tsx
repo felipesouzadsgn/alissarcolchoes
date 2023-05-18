@@ -20,7 +20,7 @@ export default function RootLayout({
       <Head>
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-773499482`}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -28,7 +28,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
+            gtag('config', 'AW-773499482', {
               page_path: window.location.pathname,
             });
           `
