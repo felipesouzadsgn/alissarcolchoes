@@ -92,7 +92,7 @@ export function Hero() {
             <span className="uppercase text-white">Category</span>
             <h2 className="text-7xl mt-2 max-md:text-5xl bold max-tablet:text-center text-yellow-400">Baú Casal</h2>
             <p className="text-white max-md:text-sm my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus a at suscipit nemo eveniet fugiat itaque possimus tempora.</p>
-            <Link href="https://wa.me/5513981577284" target="_blank" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</Link>
+            <Link onClick={() => gtagReportConversion('')} href="https://wa.me/5513981577284" target="_blank" className="py-3 px-6 rounded bg-slate-50 text-blue-500">Solicitar Orçamento</Link>
           </div>
         </div>
         <div className="keen-slider__slide number-slide2 flex flex-wrap justify-center items-center gap-3 max-tablet:flex-col w-full h-screen max-tablet:h-full bg-blue-700 p-12">
