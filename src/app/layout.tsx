@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Header } from './components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { Analytics } from './components/Analytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +18,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <Analytics />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING}', {
+              page_path: window.location.pathname,
+            });
+          `
+          }}
+        />
       </Head>
       <body className={inter.className}>
         <Header />
