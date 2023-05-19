@@ -8,7 +8,6 @@ import P03 from "./assets/img/img-2.png"
 import P04 from "./assets/img/img-3.png"
 import P05 from "./assets/img/img-3.png"
 import P06 from "./assets/img/img-3.png"
-import { Feedbacks } from './components/Feedbacks'
 import { Contact } from './components/Contact'
 import Link from 'next/link'
 import { WhatsappLogo } from '@phosphor-icons/react'
