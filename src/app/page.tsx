@@ -19,7 +19,7 @@ export default function Home() {
       <Products images={imagesUrls} />
       <Feedbacks />
       <Contact />
-      <Link href="https://wa.me/5513981577284" target='_blank' className='w-5 h-5 bg-green-500 absolute bottom-2 right-2'></Link>
+      <Link href="https://wa.me/5513981577284" target='_blank' className='w-24 h-24 bg-green-500 fixed bottom-3 right-3 rounded-full'></Link>
     </main>
   )
 }
