@@ -79,6 +79,9 @@ export function Hero() {
         <div className="keen-slider__slide number-slide1 relative">
           <Image src="https://www.martinsestofados.com.br/assets/img/produtos/61eb01e4b5ea3.jpg" width={1920} height={1080} alt="Image de Colchão & Box" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full" />
         </div>
+        <div className="keen-slider__slide number-slide1 relative">
+          <Image src="https://www.martinsestofados.com.br/assets/img/produtos/62c430e48eab7.jpg" width={1920} height={1080} alt="Image de Colchão & Box" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full" />
+        </div>
       </div>
       <ul className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-10">
         {loaded && instanceRef.current && (
