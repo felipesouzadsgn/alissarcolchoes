@@ -1,6 +1,4 @@
 import { Hero } from './components/Hero'
-import { Featured } from './components/Featured'
-import { Logotypes } from './components/Logotypes'
 import { Products } from './components/Products'
 
 import P01 from "./assets/img/P01.png"
@@ -17,8 +15,6 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <Featured />
-      <Logotypes />
       <Products images={imagesUrls} />
       <Feedbacks />
       <Contact />

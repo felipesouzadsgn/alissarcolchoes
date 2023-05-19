@@ -8,21 +8,7 @@ export function Header() {
         <a href="">
           <Image src={LogoAlissar} alt="Logo Alissar Colchões" />
         </a>
-        <ul className="flex gap-8 max-md:hidden ">
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Sobre</a>
-          </li>
-          <li>
-            <a href="">Produtos</a>
-          </li>
-          <li>
-            <a href="">Contato</a>
-          </li>
-        </ul>
-        <a href="" className="py-3 px-6 rounded bg-slate-50 text-blue-500 max-md:hidden">Solicitar Orçamento</a>
+        <a href="https://wa.me/5513981577284" target="_blank" className="py-3 px-6 rounded-full bg-transparent border border-white text-white max-md:hidden uppercase">Fala com Vendedor</a>
       </nav>
     </header>
   )
