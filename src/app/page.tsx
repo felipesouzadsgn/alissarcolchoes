@@ -19,7 +19,6 @@ export default function Home() {
     <main className="relative">
       <Hero />
       <Products images={imagesUrls} />
-      <Feedbacks />
       <Contact />
       <Link href="https://wa.me/5513981577284" target='_blank' className='flex justify-center items-center w-24 h-24 bg-green-500 fixed bottom-3 right-3 rounded-full'>
         <WhatsappLogo size={48} color='white' />
