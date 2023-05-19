@@ -11,6 +11,12 @@ const nextConfig = {
         port: '',
         pathname: '/img/products/original/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.martinsestofados.com.br',
+        port: '',
+        pathname: '/assets/img/produtos/**',
+      },
     ],
   },
 }
