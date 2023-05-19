@@ -1,3 +1,4 @@
+"use client"
 import { Hero } from './components/Hero'
 import { Products } from './components/Products'
 
@@ -10,6 +11,7 @@ import P06 from "./assets/img/img-3.png"
 import { Feedbacks } from './components/Feedbacks'
 import { Contact } from './components/Contact'
 import Link from 'next/link'
+import { WhatsappLogo } from '@phosphor-icons/react'
 
 export default function Home() {
   const imagesUrls = [P01, P02, P03, P04, P05, P06]
@@ -19,7 +21,9 @@ export default function Home() {
       <Products images={imagesUrls} />
       <Feedbacks />
       <Contact />
-      <Link href="https://wa.me/5513981577284" target='_blank' className='w-24 h-24 bg-green-500 fixed bottom-3 right-3 rounded-full'></Link>
+      <Link href="https://wa.me/5513981577284" target='_blank' className='flex justify-center items-center w-24 h-24 bg-green-500 fixed bottom-3 right-3 rounded-full'>
+        <WhatsappLogo size={48} color='white' />
+      </Link>
     </main>
   )
 }
