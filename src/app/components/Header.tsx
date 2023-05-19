@@ -3,7 +3,7 @@ import LogoAlissar from "../assets/svg/LogoAlissar.svg"
 
 export function Header() {
   return (
-    <header className="w-full fixed z-10 left-0 top-0 flex justify-center items-center text-white">
+    <header className="w-full z-10 left-0 top-0 flex justify-center items-center text-white bg-blue-700">
       <nav className="w-full max-w-7xl h-20 flex items-center justify-between max-md:justify-center max-md:p-3">
         <a href="">
           <Image src={LogoAlissar} alt="Logo Alissar Colchões" />
