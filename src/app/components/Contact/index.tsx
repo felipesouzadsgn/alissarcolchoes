@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Contact() {
   return (
-    <section className="w-full flex justify-center items-center h-screen max-md:h-auto bg-blue-700 p-6">
+    <section className="w-full flex justify-center items-center h-screen max-md:h-auto bg-blue-950 p-6">
       <div className="w-full max-w-7xl grid grid-cols-2 max-md:grid-cols-1 gap-8">
         <div className="flex-1 grid grid-cols-2 max-md:grid-cols-1 gap-8">
           <Link href="tel:13981577284" target="_blank" className="flex-1 flex-col gap-2 h-64 rounded-xl bg-white flex items-center justify-center">

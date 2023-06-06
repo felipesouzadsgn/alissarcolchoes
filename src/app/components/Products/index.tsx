@@ -32,6 +32,7 @@ export function Products({ images }: ProductsImagesProps) {
       setLoaded(true)
     },
   })
+
   return (
     <section className="w-full h-screen my-20 flex justify-center items-center p-6">
       <div className="relative w-full max-w-7xl">
@@ -50,10 +51,10 @@ export function Products({ images }: ProductsImagesProps) {
               >
                 <div className="relative border flex flex-col justify-between rounded-xl w-full h-full overflow-hidden">
                   <div className="w-full h-80">
-                    <Image src={IM01} alt="" />
+                    <Image src={imageUrl} alt="" />
                   </div>
                   <a href="" className="mb-5 px-5 text-2xl">Saiba mais</a>
-                  <Link href="https://wa.me/5513981577284" target="_blank" className="absolute flex justify-center items-center rounded-tl-2xl right-0 bottom-0 w-16 h-16 bg-blue-700">
+                  <Link href="https://wa.me/5513981577284" target="_blank" className="absolute flex justify-center items-center rounded-tl-2xl right-0 bottom-0 w-16 h-16 bg-blue-950">
                     <Image src={WhatsApp} className="w-12 h-12" alt="" />
                   </Link>
                 </div> 
@@ -65,7 +66,7 @@ export function Products({ images }: ProductsImagesProps) {
           {loaded && instanceRef.current && (
             <div className="space-x-4">
               <button
-                className="p-3 border bg-blue-600 text-white rounded-xl"
+                className="p-3 border bg-blue-950 text-white rounded-xl"
                 onClick={(e: any) =>
                   e.stopPropagation() || instanceRef.current?.prev()
                 }
@@ -73,7 +74,7 @@ export function Products({ images }: ProductsImagesProps) {
                 <CaretLeft size={24} />
               </button>
               <button
-                className="p-3 border bg-blue-600 text-white rounded-xl"
+                className="p-3 border bg-blue-950 text-white rounded-xl"
                 onClick={(e: any) =>
                   e.stopPropagation() || instanceRef.current?.next()
                 }
